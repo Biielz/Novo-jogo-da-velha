@@ -41,9 +41,10 @@ function verifica(){
     }
 }
 
+// função para limpar o jogo
 function novo(){
     for (i=1; i<4; i++){
-        for (j=1; j<4; j++){
+        for(j=1; j<4; i++){
             nomecelula = 'cel' + i + j
             document.getElementById(nomecelula).innerHTML = '';
         }
