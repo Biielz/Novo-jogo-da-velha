@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale>=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/"
     <title>Jogo da velha (W.I.P)</title>
 </head>
 <body>
     <div class="container">
         <div class="linha">
-            <div class="casa" id="cel11" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel12" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel13" onclick="joga();verifica();"></div>
+            <div class="casa" id="cel11" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel12" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel13" onclick="joga(this.id);verifica();"></div>
         </div>
 
         <div class="linha">
-            <div class="casa" id="cel21" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel22" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel23" onclick="joga();verifica();"></div>
+            <div class="casa" id="cel21" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel22" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel23" onclick="joga(this.id);verifica();"></div>
         
         </div>
     
         <div class="linha">
-            <div class="casa" id="cel31" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel32" onclick="joga();verifica();"></div>
-            <div class="casa" id="cel33" onclick="joga();verifica();"></div>
+            <div class="casa" id="cel31" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel32" onclick="joga(this.id);verifica();"></div>
+            <div class="casa" id="cel33" onclick="joga(this.id);verifica();"></div>
         </div>
 
         <div class="botao">
-            <input type="button" id="botao" value="Novo Jogo">
+            <input type="button" id="botao" value="Novo Jogo" onclick="novo()">
         </div>
     </div>
 </body>

@@ -27,7 +27,7 @@ function verifica(){
     if (((c11 != '') && (c12 != '') && (c13 != '') &&
         (c11 == c12) && (c12 == c13)) || ((c11 != '') &&
         (c22 != '') && (c33 != '') && (c11 == c22) &&
-        (c22 != '')) || ((c11 != '') && (c21 != '') &&
+        (c22 == c33)) || ((c11 != '') && (c21 != '') &&
         (c31 != '') && (c11 == c21) && (c21 == c31)) || ((c21 != '') &&
         (c22 != '') && (c23 != '') && (c21 == c22) &&
         (c22 == c23)) || ((c31 != '') && (c32 != '') &&
@@ -44,8 +44,8 @@ function verifica(){
 // função para limpar o jogo
 function novo(){
     for (i=1; i<4; i++){
-        for(j=1; j<4; i++){
-            nomecelula = 'cel' + i + j
+        for(j=1; j<4; j++){
+            nomecelula = 'cel' + i + j;
             document.getElementById(nomecelula).innerHTML = '';
         }
     }
